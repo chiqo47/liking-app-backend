@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": false,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "ecmaVersion": 2017
+  },
+
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "warn",
+      "never"
+    ],
+    "no-console": ["error", {
+      "allow": ["log", "warn", "error"]
+    }],
+
+    "no-unused-vars": "warn"
+  }
+}
